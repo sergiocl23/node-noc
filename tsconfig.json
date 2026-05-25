@@ -9,17 +9,17 @@
     ],
   "compilerOptions": {
     // File Layout
-    "rootDir": "src",
+    // "rootDir": "src",
+    "rootDirs": ["src"],
     "outDir": "dist/",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
-    "types": ["node"],
+    "module": "esnext",
+    "target": "es2023",
     // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
+    "lib": ["esnext"],
+    "types": ["node"],
     // and npm install -D @types/node
 
     // Other Outputs
@@ -47,5 +47,8 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "ignoreDeprecations": "6.0"
   }
 }
