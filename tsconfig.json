@@ -9,7 +9,7 @@
     ],
   "compilerOptions": {
     // File Layout
-    // "rootDir": "src",
+    "rootDir": "src",
     "rootDirs": ["src"],
     "outDir": "dist/",
 
